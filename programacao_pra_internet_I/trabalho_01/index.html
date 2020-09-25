@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="title">
+        <h1>Cadastro de Novos Usuários</h1>
+    </header>
+    <main>
+        <!-- Dados Pessoais -->
+        <section>
+            <form class="formulary" name="dadosPessoais" action="./pages/cadastroRealizado.html"
+                onsubmit="storageForm()">
+                <div>
+                    <div class="title-form">
+                        <h3>Dados Pessoais</h3>
+                    </div>
+                    <div class="formulary-content">
+                        <div>
+                            <input class="input-design" type="text" id="nome" placeholder="Nome Completo..." required>
+                            <input class="input-design" type="text" id="endereco" placeholder="Endereço..." required>
+                        </div>
+                        <div>
+                            <input class="input-design" type="text" id="cidade" placeholder="Cidade..." required>
+                            <select class="input-design-select" id="estado" name="estado" required>
+                                <option value="" disabled selected hidden>Escolha seu Estado...</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Dados do Sistema -->
+                    <div class="title-form">
+                        <h3>Dados do Sistema</h3>
+                    </div>
+                    <div class="formulary-content">
+                        <input class="input-design" type="text" id="usuario" placeholder="Nome de Usuário..." required>
+                        <input class="input-design" type="password" id="password" placeholder="Senha..." required>
+                        <input class="input-design" type="password" id="confirm_password" onchange="verifyPassword()" placeholder="Confirme sua Senha..."
+                            required>
+                    </div>
+                    <div class="title-form">
+                        <h3></h3>
+                    </div>
+                    <!-- Botão de Cadastro -->
+                    <div class="button-submit">
+                        <input class="button-design" type="submit" value="Cadastrar o Usuário">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
