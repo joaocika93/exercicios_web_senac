@@ -1,5 +1,5 @@
 function storageForm() {
-    localStorage.setItem('nome', document.forms['dadosPessoais']['nome'].value);
+    localStorage.setItem('nome', document.forms['dadosPessoais']['nome'].value.toUpperCase());
     localStorage.setItem('endereco', document.forms['dadosPessoais']['endereco'].value);
     localStorage.setItem('cidade', document.forms['dadosPessoais']['cidade'].value);
     localStorage.setItem('estado', document.forms['dadosPessoais']['estado'].value);
