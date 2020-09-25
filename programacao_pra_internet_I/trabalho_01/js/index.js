@@ -5,6 +5,8 @@ function storageForm() {
     localStorage.setItem('estado', document.forms['dadosPessoais']['estado'].value);
     localStorage.setItem('usuario', document.forms['dadosPessoais']['usuario'].value);
 
+    alert('Dados cadastrados com Sucesso!')
+
 }
 
 function showData() {
