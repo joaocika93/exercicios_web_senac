@@ -17,7 +17,7 @@ function showData() {
     document.getElementById('showUsuario').innerHTML = localStorage.getItem('usuario');
 }
 
-function verifyPassword(){
+function verifyPassword() {
     var password = document.forms['dadosPessoais']['password'].value;
     var confirmPassword = document.forms['dadosPessoais']['confirm_password'].value;
 
